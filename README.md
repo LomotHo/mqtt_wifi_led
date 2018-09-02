@@ -1,6 +1,6 @@
 # mqtt_wifi_led
 remote control the led with nodemcu by mqtt protocol on esp8266 
-[中文文档](README_zh.md)
+( [中文文档](README_zh.md) )
 
 ## features
 use the mqtt protocol，support reconnection of wifi and mqtt client，control the light whth pwm 
