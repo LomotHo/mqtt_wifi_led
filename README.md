@@ -1,31 +1,32 @@
 # mqtt_wifi_led
 remote control the led with nodemcu by mqtt protocol on esp8266 
-( [中文文档](README_zh.md) )
+( [README](README_en.md) )
 
-## features
-use the mqtt protocol，support reconnection of wifi and mqtt client，control the light whth pwm 
+## 特性
+使用mqtt协议，支持wifi，mqtt断线重连，使用pwm控制led亮度
 
-## supported chip
+## 支持芯片
 esp8266 esp8285
 
-## firmware
-there is an available firmware in the firmware folder
-with dht, file, gpio, http, mqtt, net, node, pwm, sjson, tmr, uart, wifi modules
+## 固件
+firmware文件夹中有可用固件
+支持dht, file, gpio, http, mqtt, net, node, pwm, sjson, tmr, uart, wifi 模块
 
-## usage
- 1. set the arg in config.lua
+## 使用方法
+ 1. 设置config.lua中的参数：
 
-wifiLedPin --output pin
-config.wifi.ssid --ssid of wifi
-config.wifi.pwd --passwore of wifi
-config.mqtt.* --some config related to mqtt, a mqtt broker is needed
+wifiLedPin --输出针脚
+config.wifi.ssid --wifi的ssid
+config.wifi.pwd --wifi密码
+config.mqtt.* --mqtt相关设置项，需要有mqtt服务器，如果没有可以暂时使用我的 iot.lomot.cn:1883(不保证稳定性)，或者去使用其他公共平台
 
- 2. flash all the flie of the src folder into you chip then youcan control you led with mqtt
+ 2. 将src文件夹中的文件全部写入
 
-the following command can switch the light to 10, max is 100
+之后可以使用mqtt控制
+如以下命令将灯亮度调节到10， 最亮为100
 ```bash
 mosquitto_pub -h mqttserver.com -t /dorm/wifiLed -m "10"
 ```
 
-## plan
-support homekit
+## 后续计划
+支持homekit
