@@ -27,5 +27,5 @@ the following command can switch the light to 10, max is 100
 mosquitto_pub -h mqttserver.com -t /dorm/wifiLed -m "10"
 ```
 
-## 后续计划
+## plan
 support homekit
