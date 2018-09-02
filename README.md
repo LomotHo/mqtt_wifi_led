@@ -28,5 +28,18 @@ config.mqtt.* --mqtt相关设置项，需要有mqtt服务器，如果没有可�
 mosquitto_pub -h mqttserver.com -t /dorm/wifiLed -m "10"
 ```
 
+## 相关问题
+ - 如何刷写固件
+
+使用工具[nodemcu-pyflasher](https://github.com/marcelstoer/nodemcu-pyflasher)
+
+ - 关于mqtt服务器搭建以及mqtt协议的知识
+
+[这里](http://dataguild.org/?p=6817)有篇文章介绍的比较好
+
+ - 手机控制
+
+可以使用手机的mqtt客户端来控制，比如 MQTT dash
+
 ## 后续计划
 支持homekit
