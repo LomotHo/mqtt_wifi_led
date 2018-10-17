@@ -1,6 +1,6 @@
 # mqtt_wifi_led
 remote control the led with nodemcu by mqtt protocol on esp8266 
-( [README](README_en.md) )
+( [README, English version](README_en.md) )
 
 ## 特性
 使用mqtt协议，支持wifi，mqtt断线重连，使用pwm控制led亮度
