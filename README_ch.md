@@ -14,11 +14,12 @@ firmware文件夹中有可用固件
 
 ## 使用方法
  1. 设置config.lua中的参数：
-
+```
 wifiLedPin --输出针脚
 config.wifi.ssid --wifi的ssid
 config.wifi.pwd --wifi密码
 config.mqtt.* --mqtt相关设置项，需要有mqtt服务器，如果没有可以暂时使用我的 iot.lomot.cn:1883(不保证稳定性)，或者去使用其他公共平台
+```
 
  2. 将src文件夹中的文件全部写入
 
