@@ -14,11 +14,12 @@ with dht, file, gpio, http, mqtt, net, node, pwm, sjson, tmr, uart, wifi modules
 
 ## usage
  1. set the arg in config.lua
-
+```
 wifiLedPin --output pin
 config.wifi.ssid --ssid of wifi
 config.wifi.pwd --passwore of wifi
 config.mqtt.* --some config related to mqtt, a mqtt broker is needed
+```
 
  2. flash all the flie of the src folder into you chip then youcan control you led with mqtt
 
