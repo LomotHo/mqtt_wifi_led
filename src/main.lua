@@ -6,11 +6,9 @@ require("wifiLed")
 
 
 function main()
-	wifiLed.init()
-
+    wifiLed.init()
     mqttClient.start(x, function(mqttData)
     	wifiLed.setLight(mqttData)
     end)
-
 end
 main()
